@@ -22,15 +22,15 @@ networking:
 
 nodes:
 - role: control-plane
-  kubeadmConfigPatches:
-  - |
-    kind: ClusterConfiguration
-    apiServer:
-      extraArgs:
-        audit-log-path: "/var/log/kubernetes/audit.log"
-        audit-log-maxage: "30"
-        audit-log-maxbackup: "10"
-        audit-log-maxsize: "100"
+  # kubeadmConfigPatches:
+  # - |
+  #   kind: ClusterConfiguration
+  #   apiServer:
+  #     extraArgs:
+  #       audit-log-path: "/var/log/kubernetes/audit.log"
+  #       audit-log-maxage: "30"
+  #       audit-log-maxbackup: "10"
+  #       audit-log-maxsize: "100"
 
 - role: worker
 
